@@ -1,0 +1,153 @@
+body {
+  color: #4a4a4a;
+  font-family: sans-serif;
+  /* box-sizing: border-box; */
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.topBar {
+  margin: 0 24px;
+  height: 64px;
+  justify-content: space-between;
+}
+.logo p {
+  font-size: 32px;
+}
+.logo p span {
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin-left: 16px;
+}
+.header {
+  background-color: #d8d8d8;
+  padding: 32px 24px;
+  align-items: stretch;
+}
+.header img {
+  width: 60%;
+  height: 60%;
+  display: block;
+  margin-right: 24px;
+}
+.headerText {
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5% 0;
+  width: 35%;
+  align-items: flex-start;
+}
+.headerText p {
+  font-size: 1.25rem;
+}
+h2 {
+  font-weight: bold;
+  font-size: 2.25rem;
+}
+.headerText .button {
+  background-color: #4a4a4a;
+  color: white;
+  padding: 8px 0;
+  text-align: center;
+  width: 80%;
+  font-size: 1rem;
+}
+.practice {
+  background-color: #f3f5f5;
+}
+.practiceLeft {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  align-items: flex-start;
+  padding: 32px 24px;
+}
+.practiceRight {
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+  align-items: flex-start;
+  border-left: 1px solid #d7d7d7;
+  align-self: stretch;
+}
+.practiceLeft img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.practiceLeft h2 {
+  margin: 32px 0 24px 0;
+}
+.practiceRight img {
+  max-width: 35%;
+  height: auto;
+  display: block;
+  margin: 16px;
+}
+.practiceRightDetails {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.startLearing {
+  background-color: #eaebec;
+  padding: 32px 56px;
+}
+.startLearing h2 {
+  margin-bottom: 16px;
+  text-align: center;
+}
+.learningBoxes {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.courses {
+  width: 30%;
+  margin: 16px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.courses img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.courses h3 {
+  margin: 16px 16px 8px 16px;
+  font-weight: bold;
+}
+.courses p {
+  margin: 0 16px 8px 16px;
+  font-size: 12px;
+  line-height: 1.25;
+}
+.courses p:last-child {
+  margin-bottom: 24px;
+}
+.thesis {
+  padding: 32px 0;
+  background-color: #f3f5f5;
+}
+.thesis h2 {
+  margin-bottom: 32px;
+  text-align: center;
+}
+.thesisLeft {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  align-items: flex-start;
+  margin: 0 24px;
+}
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.thesis h3 {
+  margin: 24px 0 8px 0;
+}
