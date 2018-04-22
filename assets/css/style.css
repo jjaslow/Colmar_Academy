@@ -2,6 +2,15 @@ body {
   color: #4a4a4a;
   font-family: sans-serif;
   /* box-sizing: border-box; */
+  line-height: 1.25;
+}
+p,
+li {
+  font-size: 12px;
+  line-height: 1.5;
+}
+nav li {
+  font-size: 14px;
 }
 .flex {
   display: flex;
@@ -13,7 +22,7 @@ body {
   justify-content: space-between;
 }
 .logo p {
-  font-size: 32px;
+  font-size: 24px;
 }
 .logo p span {
   font-weight: bold;
@@ -21,7 +30,7 @@ body {
 nav ul {
   display: flex;
 }
-nav ul li {
+ul li {
   margin-left: 16px;
 }
 .header {
@@ -44,10 +53,12 @@ nav ul li {
 }
 .headerText p {
   font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.25;
 }
 h2 {
-  font-weight: bold;
-  font-size: 2.25rem;
+  font-weight: 800;
+  font-size: 1.75rem;
 }
 .headerText .button {
   background-color: #4a4a4a;
@@ -89,9 +100,25 @@ h2 {
   display: block;
   margin: 16px;
 }
+.practiceRight h3 {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.practiceRight p {
+  padding-right: 10px;
+}
+.practiceRight a {
+  text-decoration: none;
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.5;
+}
 .practiceRightDetails {
   flex-direction: column;
   align-items: flex-start;
+}
+.guestLecture {
+  background-color: #d8d8d8;
 }
 .startLearing {
   background-color: #eaebec;
@@ -104,6 +131,7 @@ h2 {
 .learningBoxes {
   flex-wrap: wrap;
   justify-content: center;
+  align-items: stretch;
 }
 .courses {
   width: 30%;
@@ -122,8 +150,6 @@ h2 {
 }
 .courses p {
   margin: 0 16px 8px 16px;
-  font-size: 12px;
-  line-height: 1.25;
 }
 .courses p:last-child {
   margin-bottom: 24px;
@@ -131,6 +157,7 @@ h2 {
 .thesis {
   padding: 32px 0;
   background-color: #f3f5f5;
+  border-bottom: 1px solid #e9eaeb;
 }
 .thesis h2 {
   margin-bottom: 32px;
@@ -148,6 +175,42 @@ video {
   height: auto;
   display: block;
 }
-.thesis h3 {
+.thesisLeft h3 {
   margin: 24px 0 8px 0;
+  font-weight: bold;
+}
+.thesisRight {
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+  align-items: flex-start;
+  align-self: stretch;
+  overflow: hidden;
+}
+.thesisRight img {
+  max-width: 35%;
+  height: auto;
+  display: block;
+  margin: 16px;
+}
+
+.fisma {
+  background-color: #d8d8d8;
+}
+.thesisRightDetails {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 16px;
+}
+.thesisRightDetails h3 {
+  font-weight: bold;
+}
+.footer {
+  padding: 16px 24px;
+  background-color: #f3f5f5;
+  display: flex;
+  justify-content: space-between;
+}
+.footer ul {
+  display: flex;
 }
