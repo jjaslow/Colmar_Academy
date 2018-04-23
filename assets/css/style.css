@@ -4,6 +4,9 @@ body {
   /* box-sizing: border-box; */
   line-height: 1.25;
 }
+.mobile {
+  display: none;
+}
 p,
 li {
   font-size: 12px;
@@ -86,6 +89,9 @@ h2 {
   border-left: 1px solid #d7d7d7;
   align-self: stretch;
 }
+.orientationDate {
+  margin-top: 18px;
+}
 .practiceLeft img {
   max-width: 100%;
   height: auto;
@@ -99,6 +105,9 @@ h2 {
   height: auto;
   display: block;
   margin: 16px;
+}
+.practiceRightDetails img {
+  display: none;
 }
 .practiceRight h3 {
   font-weight: bold;
@@ -130,12 +139,12 @@ h2 {
 }
 .learningBoxes {
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: stretch;
 }
 .courses {
   width: 30%;
-  margin: 16px;
+  margin: 16px 0;
   background-color: #fff;
   overflow: hidden;
 }
@@ -213,4 +222,101 @@ video {
 }
 .footer ul {
   display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+  .topBar nav,
+  .topBar p {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .header {
+    flex-direction: column;
+    padding: 0;
+  }
+  .header img {
+    width: 100%;
+    height: auto;
+  }
+  .headerText {
+    padding: 32px 16px;
+    width: auto;
+    align-items: flex-start;
+  }
+
+  .headerText p {
+    padding: 32px 0 24px 0;
+  }
+  .headerText .button {
+    width: 100%;
+    background-color: #9b9b9b;
+  }
+  .practiceLeft {
+    display: none;
+  }
+  .practiceRight {
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+    border-left: 0px solid #d7d7d7;
+    background-color: #fff;
+  }
+  .orientationDate,
+  .ourCampus,
+  .guestLecture {
+    flex-direction: column;
+    margin: 16px;
+    margin-bottom: 64px;
+  }
+  .practiceRight img {
+    display: none;
+  }
+  .practiceRightDetails img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  .guestLecture {
+    background-color: #fff;
+  }
+  .startLearing {
+    background-color: #f5f4f5;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 32px 16px;
+  }
+  .courses {
+    width: 100%;
+    margin: 4px 0;
+    padding: 16px 16px 24px 16px;
+    background-color: #d8d8d8;
+  }
+  .courses img {
+    display: none;
+  }
+  .courses h3 {
+    margin: 0;
+    font-size: 22px;
+  }
+  .courses p {
+    display: none;
+  }
+  .thesisLeft {
+    width: 100%;
+    margin: 0 0;
+  }
+  .thesisRight {
+    display: none;
+  }
+  .thesisLeft h3,
+  .thesisLeft p {
+    display: none;
+  }
+  .footer ul {
+    display: none;
+  }
 }
