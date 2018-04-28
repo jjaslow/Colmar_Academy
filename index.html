@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,7 @@
   <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
@@ -25,6 +26,7 @@
   <meta name="msapplication-TileImage" content="assets/images/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
 
   <div class="topBar flex">
@@ -33,7 +35,7 @@
       <p><span>COLMAR</span>ACADEMY</p>
     </div>
     <nav>
-      <ul>
+      <ul role="presentation">
         <li>On Campus</li>
         <li>Online</li>
         <li>For Companies</li>
@@ -46,7 +48,7 @@
   </div>
 
 
-  <div class="header flex">
+  <header class="flex">
 
     <img src="assets/images/banner.jpg" alt="Learn everyday">
     <div class="headerText flex">
@@ -54,7 +56,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
       <p class="button">Start here</p>
     </div>
-  </div>
+  </header>
 
   <div class="practice flex">
 
@@ -68,7 +70,7 @@
 
     <div class="practiceRight">
 
-      <div class="orientationDate flex">
+      <div class="orientationDate flex" role="presentation">
         <img src="./assets/images/information-orientation.jpg" alt="orientation date">
         <div class="practiceRightDetails flex">
           <img src="./assets/images/information-orientation-mobile.jpg" alt="orientation date">
@@ -79,7 +81,7 @@
       </div>
 
 
-      <div class="ourCampus flex">
+      <div class="ourCampus flex" role="presentation">
         <img src="./assets/images/information-campus.jpg" alt="campus info">
         <div class="practiceRightDetails flex">
           <img src="./assets/images/information-campus-mobile.jpg" alt="campus info">
@@ -91,7 +93,7 @@
 
 
 
-      <div class="guestLecture flex">
+      <div class="guestLecture flex" role="presentation">
         <img src="./assets/images/information-guest-lecture.jpg" alt="guest lecture">
         <div class="practiceRightDetails flex">
           <img src="./assets/images/information-guest-lecture-mobile.jpg" alt="guest lecture">
@@ -110,42 +112,42 @@
     <h2>Start learning</h2>
     <div class="learningBoxes flex">
 
-      <div class="courses">
+      <div class="courses" role="presentation">
         <img src="./assets/images/course-software.jpg" alt="Software engineering">
         <h3>Software engineering</h3>
         <p>COURSES</p>
         <p>Web Development, Mobile Development, iOT, APIs</p>
       </div>
 
-      <div class="courses">
+      <div class="courses" role="presentation">
         <img src="./assets/images/course-computer-art.jpg" alt="Computer art">
         <h3>Computer art</h3>
         <p>COURSES</p>
         <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
       </div>
 
-      <div class="courses">
+      <div class="courses" role="presentation">
         <img src="./assets/images/course-design.jpg" alt="Design">
         <h3>Design</h3>
         <p>COURSES</p>
         <p>User Experience Design, User Research, Visual Design</p>
       </div>
 
-      <div class="courses">
+      <div class="courses" role="presentation">
         <img src="./assets/images/course-data.jpg" alt="Data">
         <h3>Data</h3>
         <p>COURSES</p>
         <p>Data Science, Big Data, SQL, Data Visualization</p>
       </div>
 
-      <div class="courses">
+      <div class="courses" role="presentation">
         <img src="./assets/images/course-business.jpg" alt="Business">
         <h3>Business</h3>
         <p>COURSES</p>
         <p>Product Development, Business Development, Startup</p>
       </div>
 
-      <div class="courses">
+      <div class="courses" role="presentation">
         <img src="./assets/images/course-marketing.jpg" alt="Marketing">
         <h3>Marketing</h3>
         <p>COURSES</p>
@@ -162,20 +164,20 @@
     <div class="flex">
       <div class="thesisContent flex">
         <div class="thesisLeft flex">
-          <video src="assets/videos/thesis.mp4" controls >  Video not supported </video>
+          <video src="assets/videos/thesis.mp4" controls aria-label="Thesis Video Presentation">  Video not supported </video>
           <h3>Reimagine urban</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
 
         <div class="thesisRight">
-          <div class="fisma flex">
+          <div class="fisma flex" role="presentation">
             <img src="./assets/images/thesis-fisma.jpg" alt="Fisma">
             <div class="thesisRightDetails flex">
               <h3>Fisma: Design and Prototype</h3>
               <p>Designer shwocase of new protype product</p>
             </div>
           </div>
-          <div class="flex">
+          <div class="flex" role="presentation">
             <img src="./assets/images/thesis-now-and-then.jpg" alt="Research study about New York">
             <div class="thesisRightDetails flex">
               <h3>Now and then</h3>
@@ -194,13 +196,14 @@
 
   </div>
 
-  <div class="footer">
+  <footer>
     <p>&copy; 2016 Colmar Academy. All right reserved</p>
     <ul>
       <li>Terms</li>
       <li>Privacy</li>
     </ul>
-  </div>
+  </footer>
 
 </body>
+
 </html>
